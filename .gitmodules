@@ -1,0 +1,3 @@
+[submodule "app/gg_agents"]
+	path = app/gg_agents
+	url = https://github.com/ggaray00/gg_agents.git
