@@ -1,11 +1,8 @@
 import streamlit as st
-from gg_agents import travel_agent
-
 
 PASSWORD = st.secrets["log_in_pwd"]  # Change this to your desired password
 
 from huggingface_hub import InferenceClient
-import streamlit as st
 
 
 # client = InferenceClient("dslim/distilbert-NER",
@@ -18,7 +15,7 @@ import streamlit as st
 
 # Check if user is logged in
 if "authenticated" not in st.session_state:
-    st.session_state.authenticated = True
+    st.session_state.authenticated = False
 
 def login():
     if st.session_state["password"] == PASSWORD:
